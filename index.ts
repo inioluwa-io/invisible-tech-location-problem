@@ -1,12 +1,14 @@
 export {}
 const { location } = require("./data")
 
-const getLocationTime = (arr: string[]): string[] =>
+const getLocationTime: Function = (arr: []): any[] =>
   arr.map((currLocation: string) => {
     const currentLocation = location.find(
       (item: any) =>
         item.name === currLocation || item.postal_code === currLocation
     )
-    return currentLocation ? currentLocation.current_time : false
+    const currentTime = currentLocation ? currentLocation.current_time : false
+    console.log(currentTime)
+    return currentTime
   })
 module.exports = getLocationTime
