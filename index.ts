@@ -1,11 +1,11 @@
 export {}
-const { location } = require("./data")
+const { locations } = require("./data")
 
 const getLocationTime: Function = (arr: []): any[] =>
   arr.map((currLocation: string) => {
-    const currentLocation = location.find(
-      (item: any) =>
-        item.name === currLocation || item.postal_code === currLocation
+    const currentLocation = locations.find(
+      (location: any) =>
+      location.name === currLocation || location.postal_code === currLocation
     )
     const currentTime = currentLocation ? currentLocation.current_time : false
     console.log(currentTime)

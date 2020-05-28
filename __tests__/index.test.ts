@@ -1,14 +1,14 @@
 export {}
-const { location } = require("../data")
+const { locations } = require("../data")
 const getLocationTime = require("../")
 
 describe("Location tests", () => {
   test("Expecgt location data to be present", () => {
-    expect(location).toBeDefined()
+    expect(locations).toBeDefined()
   })
   test("Expect location to be an array of objects", () => {
-    expect(location.length).toBeGreaterThan(0)
-    location.forEach((item: any) => {
+    expect(locations.length).toBeGreaterThan(0)
+    locations.forEach((item: any) => {
       expect(item).toHaveProperty("name")
       expect(item).toHaveProperty("postal_code")
       expect(item).toHaveProperty("current_time")
