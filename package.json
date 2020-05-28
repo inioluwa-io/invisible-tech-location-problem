@@ -4,12 +4,14 @@
   "description": "Logs the time of the location",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --watch"
   },
   "author": "Inioluwa Sogelola",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^24.8.0"
+    "jest": "^24.8.0",
+    "ts-jest": "^26.0.0",
+    "typescript": "^3.9.3"
   },
   "dependencies": {
     "@types/jest": "^25.2.3",

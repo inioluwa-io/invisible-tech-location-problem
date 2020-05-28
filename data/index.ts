@@ -1,1 +1,3 @@
-export const location: any[] = [{"name"}]
+export const location: any[] = [
+  { name: "New York", postal_code: 100005, current_time: "2:30pm GMT+2" },
+]
