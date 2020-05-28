@@ -1,5 +1,7 @@
 const { location } = require("../data")
 
-test("Location data should be present", () => {
-  expect(location).toBeDefined()
+describe("Location tests", () => {
+  test("Location data should be present", () => {
+    expect(location).toBeDefined()
+  })
 })
