@@ -1,0 +1,19 @@
+{
+  "name": "location-app",
+  "version": "1.0.0",
+  "description": "Logs the time of the location",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Inioluwa Sogelola",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  },
+  "dependencies": {
+    "@types/jest": "^25.2.3",
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^13.9.0"
+  }
+}
